@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class AudioEquipment extends FilmEquipment {
-    private String brand;
+    String brand;
 
     AudioEquipment() { }
     public AudioEquipment(final int amount, final String brand) {

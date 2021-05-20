@@ -26,7 +26,7 @@ public class SceneryController {
     }
 
     @GetMapping()
-    public List<Scenery> getAllScenery() {
+    public  List<Scenery> getAllScenery() {
         return sceneryService.getAllScenery();
     }
 
@@ -38,8 +38,8 @@ public class SceneryController {
     @PutMapping()
     public Object updateScenery(@RequestBody final Scenery scenery) {
         if (sceneryService.getScenery(scenery.getId()) != null) {
-            return new ResponseEntity<Scenery>(sceneryService.
-                    updateScenery(scenery), HttpStatus.OK);
+            return new ResponseEntity<Scenery>(sceneryService
+                    .updateScenery(scenery), HttpStatus.OK);
         } else {
             return new ResponseEntity<Scenery>(HttpStatus.NOT_FOUND);
         }
@@ -48,8 +48,7 @@ public class SceneryController {
     @DeleteMapping(path = "/{id}")
     public Object deleteScenery(@PathVariable(name = "id") final Integer id) {
         if (sceneryService.getScenery(id) != null) {
-            return new ResponseEntity<Scenery>(sceneryService.
-                    deleteScenery(id), HttpStatus.OK);
+            return sceneryService.deleteScenery(id);
         } else {
             return new ResponseEntity<Scenery>(HttpStatus.NOT_FOUND);
         }

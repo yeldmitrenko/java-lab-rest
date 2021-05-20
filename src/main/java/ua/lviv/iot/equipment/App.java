@@ -13,9 +13,9 @@ public class App {
         EquipmentManager manager = new EquipmentManager();
         List<Scenery> equipment = new ArrayList<Scenery>();
 
-        equipment.add(new Scenery(2, 56, 28, "HISTORICAL"));
-        equipment.add(new Scenery(3, 12, 3, "DOCUMENTARY"));
-        equipment.add(new Scenery(6, 221, 64, "HISTORICAL"));
+        equipment.add(new Scenery(1, 2, 56, 28, "HISTORICAL"));
+        equipment.add(new Scenery(2, 3, 12, 3, "DOCUMENTARY"));
+        equipment.add(new Scenery(3, 6, 221, 64, "HISTORICAL"));
 
         manager.addScenery(equipment);
 

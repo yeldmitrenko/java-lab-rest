@@ -8,9 +8,9 @@ public class Camera extends FilmEquipment {
     private int zoom;
     private int resolution;
 
-    Camera(final int amount, final int weightInGrams, final int zoom,
+    Camera(final int id, final int amount, final int weightInGrams, final int zoom,
            final int resolution) {
-        super(amount);
+        super(id, amount);
         this.weightInGrams = weightInGrams;
         this.zoom = zoom;
         this.resolution = resolution;

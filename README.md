@@ -1,4 +1,4 @@
-# Java_Lab_8
+# Java_Lab_Rest
 ### Task
  - Write code for Lab 2
  - Use java code convention
